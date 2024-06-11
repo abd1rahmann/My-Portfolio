@@ -300,3 +300,13 @@ function displayProjects(projects) {
       projectsContainer.appendChild(projectElement);
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var options = {
+      strings: document.querySelector(".typed").getAttribute("data-typed-items").split(","),
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+  };
+  new Typed(".typed", options);
+});

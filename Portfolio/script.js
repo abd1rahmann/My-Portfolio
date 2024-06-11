@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const apiUrl = 'http://localhost:5209/api/Projects';
     const projectsContainer = document.getElementById('projects-container');
 
-    // Function to fetch and display projects
     async function fetchProjects() {
         console.log("In Script ...");
         try {
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Function to create and insert project cards into the DOM
     function displayProjects(projects) {
         projects.forEach(project => {
             const projectCard = document.createElement('div');
@@ -45,6 +43,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Fetch and display projects on page load
     fetchProjects();
 });
