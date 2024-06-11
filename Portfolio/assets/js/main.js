@@ -310,3 +310,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   new Typed(".typed", options);
 });
+
+function highlight(element) {
+  var links = document.querySelectorAll('.nav-link');
+  links.forEach(function(link) {
+      link.classList.remove('active');
+  });
+  
+  element.classList.add('active');
+}
+
