@@ -202,68 +202,6 @@
 })()
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
-  const loadingElement = document.querySelector('.loading');
-  const errorMessageElement = document.querySelector('.error-message');
-  const sentMessageElement = document.querySelector('.sent-message');
-
-  form.addEventListener('submit', async function (event) {
-      event.preventDefault();
-      
-      loadingElement.classList.remove('d-none');
-      errorMessageElement.classList.add('d-none');
-      sentMessageElement.classList.add('d-none');
-
-      const formData = new FormData(form);
-      const data = {
-          name: formData.get('name'),
-          email: formData.get('email'),
-          subject: formData.get('subject'),
-          message: formData.get('message')
-      };
-
-      if (!validateEmail(data.email)) {
-          loadingElement.classList.add('d-none');
-          errorMessageElement.classList.remove('d-none');
-          errorMessageElement.textContent = 'Please enter a valid email address.';
-          return;
-      }
-
-      try {
-          const response = await fetch('/send-email', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-          });
-
-          const result = await response.json();
-          loadingElement.classList.add('d-none');
-
-          if (result.success) {
-              sentMessageElement.classList.remove('d-none');
-              form.reset();
-          } else {
-              errorMessageElement.classList.remove('d-none');
-              errorMessageElement.textContent = result.error || 'Failed to send email.';
-          }
-      } catch (error) {
-          loadingElement.classList.add('d-none');
-          errorMessageElement.classList.remove('d-none');
-          errorMessageElement.textContent = 'An error occurred while sending email.';
-          console.error('Error:', error);
-      }
-  });
-
-  function validateEmail(email) {
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email);
-  }
-});
-
-
 document.addEventListener('scroll', function () {
   const footer = document.getElementById('footer');
   if (window.scrollY > 100) {

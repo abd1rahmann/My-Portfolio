@@ -182,6 +182,12 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
+.custom-circle {
+  width: 150px; /* Justera storleken som passar */
+  height: 150px; /* Samma som bredden för att göra den rund */
+  object-fit: cover; /* För att säkerställa att bilden fyller ut hela cirkeln */
+  border-radius: 50%; /* Gör bilden rund */
+}
 
 #main {
   margin-left: 300px;
@@ -221,6 +227,8 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  bottom: 50px;
+
 }
 
 .nav-menu>ul>li {
@@ -255,6 +263,7 @@ h6 {
 }
 
 .nav-menu a:hover i,
+.nav-menu button i:hover,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
@@ -292,6 +301,25 @@ h6 {
 }
 .nav-link.active {
   color: #007bff; /* Ljusblå färg */
+}
+.btn-primary {
+  margin-left: -5px;
+  background-color: #6f7180;
+  color: #6f7180;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: none;
+}
+
+.btn-primary:hover {
+  background: none;
+}
+
+.btn-primary i {
+  margin-right: 5px;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -455,6 +483,18 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.content h3 {
+  font-size: 2rem; /* Ökar storleken på h3-elementet */
+}
+
+.content p {
+  font-size: 1.25rem; /* Ökar storleken på p-elementen */
+}
+
+.content ul li {
+  font-size: 1.25rem; /* Ökar storleken på li-elementen */
 }
 
 
@@ -718,7 +758,7 @@ footer p {
 }
 
 .footer-bottom {
-  background: #212529;
+  background: linear-gradient(45deg, #212431, #212529);
   color: #bbb;
   text-align: center;
   padding: 20px 0;
@@ -795,9 +835,10 @@ footer p {
 .reference {
   background: #fff;
   padding: 20px;
-  margin: 20px 0;
+  margin: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .reference h3 {
@@ -812,4 +853,43 @@ footer p {
 .reference .contact-info {
   font-style: italic;
   color: #555;
+}
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  padding-bottom: 30px;
+}
+
+.lang-button {
+  border: none;
+  padding: 8px 16px; /* Justera padding för att göra knapparna lite större */
+  margin: 0 5px;
+  border-radius: 20px; /* Göra knapparna runda */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold; /* Gör texten fet */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Svenska knappen */
+.lang-button.sv {
+  background-color: #005bbf; /* Blå färg */
+  color: #f0db4f; /* Gul färg */
+}
+
+.lang-button.sv:hover {
+  background-color: #f0db4f; /* Gul färg */
+  color: #005bbf; /* Blå färg */
+}
+
+/* Engelska knappen */
+.lang-button.en {
+  background-color: #ffffff; /* Vit färg */
+  color: #ff0000; /* Röd färg */
+}
+
+.lang-button.en:hover {
+  background-color: #ff0000; /* Röd färg */
+  color: #ffffff; /* Vit färg */
 }
