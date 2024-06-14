@@ -33,8 +33,9 @@ Tillgänglighet: Följde bästa praxis för tillgänglighet för att säkerstäl
 
 Backend-API
 
-Backend-API tillhandahåller slutpunkter för hantering av projekt och tillåter CRUD-operationer (Create, Read, Update, Delete) på projektdatat. Det är byggt med ASP.NET Core, ett plattformsoberoende ramverk för att bygga API
-med C#. API följer RESTful-principer för design av slutpunkter och följer SOLID-principerna för underhållbarhet och skalbarhet.
+Backend-API tillhandahåller slutpunkter för hantering av projekt och tillåter två CRUD-operationer (Read, Update) på projektdatat. Det är byggt med ASP.NET Core, ett plattformsoberoende ramverk för att bygga API
+med C#. API följer RESTful-principer för design av slutpunkter och följer SOLID-principerna för underhållbarhet och skalbarhet. API
+är driftsatt på Azure: https://elmiportfolio.azurewebsites.net/api/Projects 
 
 Använda tekniker:
 
@@ -50,7 +51,6 @@ GET /api/projects: Hämtar alla projekt som är lagrade i databasen.
 GET /api/projects/{id}: Hämtar ett specifikt projekt efter dess ID.
 POST /api/projects: Skapar ett nytt projekt.
 PUT /api/projects/{id}: Uppdaterar ett befintligt projekt.
-DELETE /api/projects/{id}: Tar bort ett projekt efter dess ID.
 
 Utvecklingsmönster/principer:
 
