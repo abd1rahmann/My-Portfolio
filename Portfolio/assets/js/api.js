@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'http://localhost:5209/api/Projects';
+    const azureApi = 'https://elmiportfolio.azurewebsites.net/api/Projects'
     const projectsContainer = document.getElementById('projects-container');
 
     async function fetchProjects() {
         console.log("In Script ...");
         try {
             console.log("Calling API ...");
-            const response = await fetch(apiUrl);
-            if (!response.ok) {
+            const response = await fetch(azureApi);
+            if (!response.ok) { 
                 throw new Error(`HTTP error! status: ${response.status}`);
                 console.log("Failed to call API ...");
             }
