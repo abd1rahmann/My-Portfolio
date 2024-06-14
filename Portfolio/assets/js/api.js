@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    //const apiUrl = 'http://localhost:5209/api/Projects';
     const azureApi = 'https://elmiportfolio.azurewebsites.net/api/Projects'
     const projectsContainer = document.getElementById('projects-container');
 
