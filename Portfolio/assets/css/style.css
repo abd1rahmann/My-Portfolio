@@ -382,6 +382,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  margin-right: 60px;
 }
 
 #hero p span {
@@ -419,11 +420,13 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #f1f5fa;
 }
 
 .section-title {
   padding-bottom: 30px;
+
+
 }
 
 .section-title h2 {
@@ -830,23 +833,27 @@ footer p {
   color: #fed136;
 }
 
-
+#reference{
+  background: #f1f5fa;
+}
 
 .reference {
   background: #fff;
   padding: 20px;
   margin: 40px;
+  margin-left: -20px;
+  margin-right: 0px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 0px;
   
 }
 
 .reference h3 {
-  margin-top: 0;
   color: #007bff;
 }
 
-.reference p {
+.reference p, strong {
   margin: 5px 0;
 }
 
@@ -890,6 +897,42 @@ footer p {
 }
 
 .lang-button.en:hover {
-  background-color: #ff0000; /* Röd färg */
+  background-color: #ff0000; 
   color: #ffffff; /* Vit färg */
+}
+
+/* Centrera texten inom div */
+.text-center {
+  text-align: center;
+}
+
+/* Anpassad stil för knappen */
+.custom-btn {
+  background-color: #007bff; /* Ändra färg till din önskade */
+  color: #fff; /* Vit text */
+  padding: 12px 24px; /* Mer padding för större knapp */
+  font-size: 16px; /* Större textstorlek */
+  border: none; /* Ta bort standardkant */
+  border-radius: 8px; /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+  cursor: pointer; /* Pekarikon för att visa att det är en knapp */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smidig övergång för hover */
+}
+
+/* Ändra bakgrundsfärg och skugga vid hover */
+.custom-btn:hover {
+  background-color: #0056b3; /* Mörkare blå vid hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Starkare skugga vid hover */
+}
+
+/* Ändra bakgrundsfärg vid klick */
+.custom-btn:active {
+  background-color: #004494; /* Ännu mörkare blå vid klick */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Minskar skugga vid klick */
+}
+
+/* Fokusstil för tangentbordsanvändare */
+.custom-btn:focus {
+  outline: none; /* Ta bort standardfokus */
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Anpassad fokusstil */
 }
