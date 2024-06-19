@@ -382,6 +382,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  margin-right: 60px;
 }
 
 #hero p span {
@@ -890,6 +891,6 @@ footer p {
 }
 
 .lang-button.en:hover {
-  background-color: #ff0000; /* Röd färg */
+  background-color: #ff0000; 
   color: #ffffff; /* Vit färg */
 }
