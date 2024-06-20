@@ -58,3 +58,6 @@ Repository-mönster: Separerade datatillgångslogiken från affärslogiken med h
 Beroendeinsprutning: Använde ASP.NET Core's inbyggda beroendeinsprutningsbehållare för att hantera objektberoenden.
 Attributruttning: Implementerade attributbaserad rutning för att definiera API-rutter direkt på controller-åtgärder för bättre läsbarhet.
 Swagger-dokumentation: Integrerade Swagger för att generera interaktiv API-dokumentation för utvecklare att utforska slutpunkter och testa API-anrop enkelt.
+
+
+Länk till GitPages: https://abd1rahmann.github.io/Portfolio/Portfolio/index
