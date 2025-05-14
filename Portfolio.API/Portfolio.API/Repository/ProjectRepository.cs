@@ -8,7 +8,7 @@ namespace Portfolio.API.Repository
         private List<Project> Projects = new List<Project>
         {
             new Project { Id = 1, ProjectName = "EasyBank App", TechStack = "C#, .NET, <i class=\"fa-solid fa-database\"></i>", Date = new DateTime(2024, 6, 1), Description = "A banking application with various financial services.", GithubAdress = "https://github.com/abd1rahmann/EasyBankSolution", LiveDemo = "https://live-demo-link2.com" },
-            new Project { Id = 2, ProjectName = "Silicon Site", TechStack = "<i class=\"fa-brands fa-html5\"></i>, <i class=\"fa-brands fa-css3\"></i>, <i class=\"fa-brands fa-js\"></i>, <i class=\"fa-brands fa-react\"></i>", Date = new DateTime(2024, 3, 8), Description = "A social platform for tech enthusiasts.",GithubAdress = "https://github.com/abd1rahmann/Silicon", LiveDemo = "http://127.0.0.1:5500/index.html" }
+            new Project { Id = 2, ProjectName = "Silicon Site", TechStack = "<i class=\"fa-brands fa-html5\"></i>, <i class=\"fa-brands fa-css3\"></i>, <i class=\"fa-brands fa-js\"></i>, <i class=\"fa-brands fa-react\"></i>", Date = new DateTime(2024, 3, 8), Description = "A social platform for tech enthusiasts.",GithubAdress = "https://github.com/abd1rahmann/Silicon", LiveDemo = "https://abd1rahmann.github.io/Silicon/" }
         };
 
         public List<Project> GetAllProjects()

@@ -142,9 +142,14 @@ h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  width: 100px;
+  height: 100; /* Matcha höjd med bredd för att säkerställa en kvadratisk form */
+  border: 1px solid #2c2f3f;
+  border-radius: 50%; /* Gör bilden rund */
+  object-fit: cover; /* Fyll cirkeln utan att förvränga bilden */
 }
+  
+
 
 #header .profile h1 {
   font-size: 24px;
@@ -327,7 +332,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/backgroundportfolio.avif") top center;
+  background: url("../img/kontorarbete.png") top center;
   background-size: cover;
 }
 
@@ -935,4 +940,26 @@ footer p {
 .custom-btn:focus {
   outline: none; /* Ta bort standardfokus */
   box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Anpassad fokusstil */
+}
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
