@@ -143,12 +143,15 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 100px;
-  height: 100; /* Matcha höjd med bredd för att säkerställa en kvadratisk form */
+  height: 100;
+  /* Matcha höjd med bredd för att säkerställa en kvadratisk form */
   border: 1px solid #2c2f3f;
-  border-radius: 50%; /* Gör bilden rund */
-  object-fit: cover; /* Fyll cirkeln utan att förvränga bilden */
+  border-radius: 50%;
+  /* Gör bilden rund */
+  object-fit: cover;
+  /* Fyll cirkeln utan att förvränga bilden */
 }
-  
+
 
 
 #header .profile h1 {
@@ -187,11 +190,16 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
+
 .custom-circle {
-  width: 150px; /* Justera storleken som passar */
-  height: 150px; /* Samma som bredden för att göra den rund */
-  object-fit: cover; /* För att säkerställa att bilden fyller ut hela cirkeln */
-  border-radius: 50%; /* Gör bilden rund */
+  width: 150px;
+  /* Justera storleken som passar */
+  height: 150px;
+  /* Samma som bredden för att göra den rund */
+  object-fit: cover;
+  /* För att säkerställa att bilden fyller ut hela cirkeln */
+  border-radius: 50%;
+  /* Gör bilden rund */
 }
 
 #main {
@@ -304,9 +312,12 @@ h6 {
 .mobile-nav-active #header {
   left: 0;
 }
+
 .nav-link.active {
-  color: #007bff; /* Ljusblå färg */
+  color: #007bff;
+  /* Ljusblå färg */
 }
+
 .btn-primary {
   margin-left: -5px;
   background-color: #6f7180;
@@ -326,6 +337,7 @@ h6 {
 .btn-primary i {
   margin-right: 5px;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -494,15 +506,18 @@ section {
 }
 
 .content h3 {
-  font-size: 2rem; /* Ökar storleken på h3-elementet */
+  font-size: 2rem;
+  /* Ökar storleken på h3-elementet */
 }
 
 .content p {
-  font-size: 1.25rem; /* Ökar storleken på p-elementen */
+  font-size: 1.25rem;
+  /* Ökar storleken på p-elementen */
 }
 
 .content ul li {
-  font-size: 1.25rem; /* Ökar storleken på li-elementen */
+  font-size: 1.25rem;
+  /* Ökar storleken på li-elementen */
 }
 
 
@@ -838,7 +853,7 @@ footer p {
   color: #fed136;
 }
 
-#reference{
+#reference {
   background: #f1f5fa;
 }
 
@@ -851,14 +866,15 @@ footer p {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-left: 0px;
-  
+
 }
 
 .reference h3 {
   color: #007bff;
 }
 
-.reference p, strong {
+.reference p,
+strong {
   margin: 5px 0;
 }
 
@@ -866,6 +882,7 @@ footer p {
   font-style: italic;
   color: #555;
 }
+
 .language-switcher {
   display: flex;
   justify-content: center;
@@ -875,35 +892,45 @@ footer p {
 
 .lang-button {
   border: none;
-  padding: 8px 16px; /* Justera padding för att göra knapparna lite större */
+  padding: 8px 16px;
+  /* Justera padding för att göra knapparna lite större */
   margin: 0 5px;
-  border-radius: 20px; /* Göra knapparna runda */
+  border-radius: 20px;
+  /* Göra knapparna runda */
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold; /* Gör texten fet */
+  font-weight: bold;
+  /* Gör texten fet */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Svenska knappen */
 .lang-button.sv {
-  background-color: #005bbf; /* Blå färg */
-  color: #f0db4f; /* Gul färg */
+  background-color: #005bbf;
+  /* Blå färg */
+  color: #f0db4f;
+  /* Gul färg */
 }
 
 .lang-button.sv:hover {
-  background-color: #f0db4f; /* Gul färg */
-  color: #005bbf; /* Blå färg */
+  background-color: #f0db4f;
+  /* Gul färg */
+  color: #005bbf;
+  /* Blå färg */
 }
 
 /* Engelska knappen */
 .lang-button.en {
-  background-color: #ffffff; /* Vit färg */
-  color: #ff0000; /* Röd färg */
+  background-color: #ffffff;
+  /* Vit färg */
+  color: #ff0000;
+  /* Röd färg */
 }
 
 .lang-button.en:hover {
-  background-color: #ff0000; 
-  color: #ffffff; /* Vit färg */
+  background-color: #ff0000;
+  color: #ffffff;
+  /* Vit färg */
 }
 
 /* Centrera texten inom div */
@@ -913,53 +940,93 @@ footer p {
 
 /* Anpassad stil för knappen */
 .custom-btn {
-  background-color: #007bff; /* Ändra färg till din önskade */
-  color: #fff; /* Vit text */
-  padding: 12px 24px; /* Mer padding för större knapp */
-  font-size: 16px; /* Större textstorlek */
-  border: none; /* Ta bort standardkant */
-  border-radius: 8px; /* Rundade hörn */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lätt skugga */
-  cursor: pointer; /* Pekarikon för att visa att det är en knapp */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Smidig övergång för hover */
+  background-color: #007bff;
+  /* Ändra färg till din önskade */
+  color: #fff;
+  /* Vit text */
+  padding: 12px 24px;
+  /* Mer padding för större knapp */
+  font-size: 16px;
+  /* Större textstorlek */
+  border: none;
+  /* Ta bort standardkant */
+  border-radius: 8px;
+  /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Lätt skugga */
+  cursor: pointer;
+  /* Pekarikon för att visa att det är en knapp */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  /* Smidig övergång för hover */
 }
 
 /* Ändra bakgrundsfärg och skugga vid hover */
 .custom-btn:hover {
-  background-color: #0056b3; /* Mörkare blå vid hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Starkare skugga vid hover */
+  background-color: #0056b3;
+  /* Mörkare blå vid hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  /* Starkare skugga vid hover */
 }
 
 /* Ändra bakgrundsfärg vid klick */
 .custom-btn:active {
-  background-color: #004494; /* Ännu mörkare blå vid klick */
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Minskar skugga vid klick */
+  background-color: #004494;
+  /* Ännu mörkare blå vid klick */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  /* Minskar skugga vid klick */
 }
 
 /* Fokusstil för tangentbordsanvändare */
 .custom-btn:focus {
-  outline: none; /* Ta bort standardfokus */
-  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Anpassad fokusstil */
+  outline: none;
+  /* Ta bort standardfokus */
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+  /* Anpassad fokusstil */
 }
+
 #projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .project-item {
-    flex: 1 1 45%;
-    max-width: 45%;
-    background: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
+  flex: 1 1 45%;
+  max-width: 45%;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .project-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lang-button {
+  background-color: transparent;
+  /* Tar bort vit bakgrund */
+  border: none;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 60px;
+}
+
+.lang-button:hover {
+  transform: scale(1.1);
+}
+
+.flag-icon {
+    display: inline-block;
+    width: 30px;             /* Justera storlek som du vill */
+    height: 30px;
+    background-size: cover;
+    border-radius: 100px;      /* Gör hörn rundade */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Valfri skugga */
 }
