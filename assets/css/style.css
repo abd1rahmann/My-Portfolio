@@ -473,6 +473,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about{
+    background: #f1f5fa;
+
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -718,12 +723,7 @@ footer {
   margin-top: auto;
 }
 
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+
 
 footer h5 {
   color: #ffc107;
@@ -855,6 +855,7 @@ footer p {
 
 #reference {
   background: #f1f5fa;
+  border: transparent;
 }
 
 .reference {
@@ -1030,3 +1031,23 @@ strong {
     border-radius: 100px;      /* Gör hörn rundade */
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Valfri skugga */
 }
+
+    .tech-icons {
+        margin-top: 12px;
+        font-size: 60px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tech-icons i {
+        color: #333;
+    }
+
+    .tech-label {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 6px;
+        margin-right: 12px;
+    }
