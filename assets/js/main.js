@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   const select = (el, all = false) => {
@@ -63,13 +63,14 @@
     onscroll(document, toggleBacktotop)
   }
 
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  on('click', '.mobile-nav-toggle', function (e) {
+    select('body').classList.toggle('mobile-nav-active');
+    const icon = this.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  });
 
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -110,7 +111,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -128,9 +129,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -138,7 +139,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -205,56 +206,56 @@
 document.addEventListener('scroll', function () {
   const footer = document.getElementById('footer');
   if (window.scrollY > 100) {
-      footer.classList.add('visible');
+    footer.classList.add('visible');
   } else {
-      footer.classList.remove('visible');
+    footer.classList.remove('visible');
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   fetch('http://localhost:5209/api/Projects')
-      .then(response => response.json())
-      .then(data => {
-          displayProjects(data);
-      })
-      .catch(error => console.error('Error fetching data:', error));
+    .then(response => response.json())
+    .then(data => {
+      displayProjects(data);
+    })
+    .catch(error => console.error('Error fetching data:', error));
 });
 
 function displayProjects(projects) {
   const projectsContainer = document.getElementById('projects-container');
 
   projects.forEach(project => {
-      const projectElement = document.createElement('div');
-      projectElement.classList.add('project');
+    const projectElement = document.createElement('div');
+    projectElement.classList.add('project');
 
-      const projectName = document.createElement('h2');
-      projectName.textContent = project.name;
+    const projectName = document.createElement('h2');
+    projectName.textContent = project.name;
 
-      const projectTechStack = document.createElement('p');
-      projectTechStack.textContent = `Tech Stack: ${project.techStack}`;
+    const projectTechStack = document.createElement('p');
+    projectTechStack.textContent = `Tech Stack: ${project.techStack}`;
 
-      projectElement.appendChild(projectName);
-      projectElement.appendChild(projectTechStack);
-      projectsContainer.appendChild(projectElement);
+    projectElement.appendChild(projectName);
+    projectElement.appendChild(projectTechStack);
+    projectsContainer.appendChild(projectElement);
   });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   var options = {
-      strings: document.querySelector(".typed").getAttribute("data-typed-items").split(","),
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true
+    strings: document.querySelector(".typed").getAttribute("data-typed-items").split(","),
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
   };
   new Typed(".typed", options);
 });
 
 function highlight(element) {
   var links = document.querySelectorAll('.nav-link');
-  links.forEach(function(link) {
-      link.classList.remove('active');
+  links.forEach(function (link) {
+    link.classList.remove('active');
   });
-  
+
   element.classList.add('active');
 }
 
